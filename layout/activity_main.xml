@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#DE050505"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="First Number:"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:background="@android:color/white"
+        android:hint="Enter Number1"
+        android:textSize="24sp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Second Number:"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter Number2"
+        android:textSize="24sp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:text="Result:"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/txtScreen"
+        android:layout_width="fill_parent"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="ADDITION"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBTRACTION"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="MULTIPLICATION"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DIVISION"/>
+
+    </LinearLayout>
+
+</LinearLayout>
